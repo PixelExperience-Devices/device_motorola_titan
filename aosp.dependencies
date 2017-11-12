@@ -1,0 +1,16 @@
+[
+  {
+    "repository": "RenanQueiroz/kernel_motorola_msm8226",
+    "target_path": "kernel/motorola/msm8226",
+    "branch": "oreo-m2"
+  },
+  {
+    "repository": "RenanQueiroz/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch": "lineage-15.1"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
+  }
+]
