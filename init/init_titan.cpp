@@ -66,22 +66,22 @@ void vendor_load_properties()
 
     std::string radio = GetProperty("ro.boot.radio", "");
 
-    property_override("ro.product.model", "Moto G 2014");
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G 2014");
 
     if (radio == "0x1") {
         /* XT1063 */
-        property_override("ro.product.device", "titan_umts");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "titan_umts");
         property_override("ro.build.description", "titan_retuglb-user 6.0 MPB24.65-34 31 release-keys");
-        property_override("ro.build.fingerprint", "motorola/titan_retuglb/titan_umts:6.0/MPB24.65-34/31:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/titan_retuglb/titan_umts:6.0/MPB24.65-34/31:user/release-keys");
         property_override("ro.build.product", "titan_umts");
         property_set("ro.mot.build.customerid", "retusa_glb");
         property_set("ro.telephony.default_network", "0");
         property_set("persist.radio.multisim.config", "");
     } else if (radio == "0x5") {
         /*XT1068 */
-        property_override("ro.product.device", "titan_umtsds");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "titan_umtsds");
         property_override("ro.build.description", "titan_retaildsds-user 6.0 MPB24.65-34 31 release-keys");
-        property_override("ro.build.fingerprint", "motorola/titan_retaildsds/titan_umtsds:6.0/MPB24.65-34/31:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/titan_retaildsds/titan_umtsds:6.0/MPB24.65-34/31:user/release-keys");
         property_override("ro.build.product", "titan_umtsds");
         property_set("ro.mot.build.customerid", "retaildsdsall");
         property_set("ro.telephony.default_network", "0,1");
@@ -91,18 +91,18 @@ void vendor_load_properties()
         property_set("persist.radio.plmn_name_cmp", "1");
     } else if (radio == "0x6") {
         /* XT1064 */
-        property_override("ro.product.device", "titan_umts");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "titan_umts");
         property_override("ro.build.description", "titan_retuaws-user 6.0 MPB24.65-34 31 release-keys");
-        property_override("ro.build.fingerprint", "motorola/titan_retuaws/titan_umts:6.0/MPB24.65-34/31:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/titan_retuaws/titan_umts:6.0/MPB24.65-34/31:user/release-keys");
         property_override("ro.build.product", "titan_umts");
         property_set("ro.mot.build.customerid", "retusa_aws");
         property_set("ro.telephony.default_network", "0");
         property_set("persist.radio.multisim.config", "");
     } else if (radio == "0x7") {
         /* XT1069 */
-        property_override("ro.product.device", "titan_udstv");
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "titan_udstv");
         property_override("ro.build.description", "titan_retbr_dstv-user 6.0 MPB24.65-34 31 release-keys");
-        property_override("ro.build.fingerprint", "motorola/titan_retbr_dstv/titan_udstv:6.0/MPB24.65-34/31:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/titan_retbr_dstv/titan_udstv:6.0/MPB24.65-34/31:user/release-keys");
         property_override("ro.build.product", "titan_udstv");
         property_set("ro.mot.build.customerid", "retbr");
         property_set("ro.telephony.default_network", "0,1");
