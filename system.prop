@@ -3,3 +3,6 @@
 # audio
 ro.audio.monitorRotation=1
 ro.config.vc_call_vol_steps=8
+
+# Google Assistant 
+ro.opa.eligible_device=true

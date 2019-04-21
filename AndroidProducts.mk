@@ -15,4 +15,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_titan.mk \
-    $(LOCAL_DIR)/lineage_titan.mk
+    $(LOCAL_DIR)/aosp_titan.mk
