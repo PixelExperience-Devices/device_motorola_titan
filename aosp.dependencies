@@ -1,10 +1,32 @@
 [
   {
-    "repository": "android_device_motorola_msm8226-common",
-    "target_path": "device/motorola/msm8226-common"
+    "remote":      "github",
+    "repository":  "thedeadfish59/android_kernel_motorola_msm8226",
+    "target_path": "kernel/motorola/msm8226",
+    "branch":      "pie"
   },
-{
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
+  {
+    "remote":      "github",
+    "repository":  "thedeadfish59/android_device_motorola_msm8226-common",
+    "target_path": "device/motorola/msm8226-common",
+    "branch":      "pie"
+  },
+  {
+    "remote":      "github",
+    "repository":  "thedeadfish59/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch":      "pie"
+  },
+  {
+    "remote":      "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-16.0"
+  },
+  {
+    "remote":      "github",
+    "repository": "LineageOS/android_system_qcom",
+    "target_path": "system/qcom",
+    "branch": "lineage-16.0"
   }
 ]
