@@ -6,7 +6,6 @@ PRODUCT_RELEASE_NAME := titan
 PRODUCT_NAME := aosp_titan
 TARGET_USE_OLD_SOUND_PICKER := true
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
-TARGET_USE_OLD_GAPPS := true
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
